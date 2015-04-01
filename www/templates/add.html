@@ -1,0 +1,27 @@
+<!--ion-nav-view class="slide-in-up" animation="slide-in-up" name="Add"-->
+<div class="modal">
+    <div class="bar bar-header">
+      <a class="button button-clear button-positive" ng-click="closeAddSite()">Cancel</a>
+      <div class="h1 title">Add New Site</div>
+    </div>
+  <ion-content class="has-header">
+    <form ng-submit="addSite(form)">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Site Name</span>
+          <input type="text" ng-model="form.name" placeholder="Example">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Web or IP Address</span>
+          <input type="text" ng-model="form.url" placeholder="www.example.com">
+        </label>
+      </div>
+      <div class="padding">
+        <button type="submit" class="button button-block button-positive">
+          Done
+        </button>
+      </div>
+    </form>
+  </ion-content>
+</div>
+<!--/ion-nav-view-->

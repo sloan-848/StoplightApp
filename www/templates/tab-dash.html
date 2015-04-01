@@ -1,0 +1,27 @@
+<ion-view view-title="Dashboard">
+    <div class="bar bar-header">
+      <button class="button button-clear button-positive" ng-click="toggleEdit()">{{editText}}</button>
+      <div class="h1 title">Dashboard</div>
+      <a class="button button-icon icon ion-ios-plus-empty" ng-click="showAddSite()"></a>
+    </div>
+  <ion-content class="has-header">
+    <ion-refresher
+      pulling-text="Pull to refresh."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-list show-delete="isEdit">
+      <ion-item ng-repeat="site in sites track by $index"
+                class="list card">
+      
+        <div class="item item-thumbnail-left" style="margin-right: -20%;">
+          <ion-delete-button class="ion-minus-circled"
+                             ng-click="removeSite($index)"></ion-delete-button>
+          <img src="{{site.image}}">
+          <h2>{{site.name}}</h2>
+          <p>{{site.url}}</p>
+          <ion-option-button class="button-assertive">Edit</ion-option-button>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,24 @@
+<ion-view view-title="Account">
+    <div class="bar bar-header">
+      <div class="h1 title">Settings</div>
+    </div>
+    <!--ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar-->
+    <ion-content class="has-header">
+      <ion-list>
+      <!--div class="item item-divider"> General Settings </div>
+      <ion-toggle  ng-model="settings.enableFriends">
+          Enable Sounds
+      </ion-toggle-->
+      <div class="item" style="text-align: left; padding-left: 5%; padding-bottom: 0px;">  
+        Ping Timeout
+          <span style="float:right; padding-right:5%">{{data.ping_time}}</span>
+        <div class="range range-positive">
+          <input type="range" name="ping_time" min="500" max="3000" value="{{data.ping_time}}" ng-model="data.ping_time"> 
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
