@@ -1,0 +1,3 @@
+Name: Stoplight
+Description: An intuitive app that allows you to monitor the state of any webserver in real-time!
+Publisher: Will Sloan

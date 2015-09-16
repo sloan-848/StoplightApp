@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.stoplight420260" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.willsloan.stoplight" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Stoplight</name>
   <description>
-        An Ionic Framework and Cordova project.
+      An intuitive app that allows you to monitor the state of any webserver in real-time!
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="sloan.848@osu.edu">
+      Will Sloan
     </author>
   <content src="index.html"/>
   <access origin="*"/>
